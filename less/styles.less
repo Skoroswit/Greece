@@ -431,6 +431,10 @@
     }
     #godSaid {
         padding-top: 30px;
+        .item{
+            &>img{
+                width: 100vw;
+            }
         h3 {
             @media (max-width: 880px) {
                 display: none;
@@ -458,7 +462,7 @@
             span {
                 font-weight: bold;
             }
-        }
+            }}
         .carousel-caption {
             position: absolute;
             top: 50%;
@@ -472,6 +476,12 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
+                &.r{
+                    right:5vw;
+                }
+                &.l{
+                    right:5vw;
+                }
                 @media (max-width: 750px) {
                     display: none;
                 }
